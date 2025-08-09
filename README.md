@@ -1,1 +1,1 @@
-### Live link --> https://ai-image-generation-8495.onrender.com
+### Live link --> http://chitrakaarai.netlify.app
