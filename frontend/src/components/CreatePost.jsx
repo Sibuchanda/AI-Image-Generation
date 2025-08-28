@@ -20,7 +20,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await axios.post("http://localhost:8080/generateImage", {
+        const response = await axios.post("https://ai-image-generation-8495.onrender.com/generateImage", {
           prompt: form.prompt,
         });
         const { resultImg } = response.data;
@@ -41,7 +41,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8080/postImage', {
+        const response = await fetch('https://ai-image-generation-8495.onrender.com/postImage', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
